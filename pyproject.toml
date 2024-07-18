@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "tech-assessment"
+version = "0.1.0"
+description = "Technical Assessment - Chemify"
+authors = ["Domantas Jonas Sakalys <d.j.sakalys@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.111.1"
+sqlalchemy = "^2.0.31"
+pydantic = "^2.8.2"
+alembic = "^1.13.2"
+
+[tool.poetry.dev-dependencies]
+black = "^24.4.2"
+pytest = "^8.2.2"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
